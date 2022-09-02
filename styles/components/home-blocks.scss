@@ -1,0 +1,25 @@
+.home-blocks {
+  .home-block + .home-block {
+    margin-top: 10px;
+  }
+}
+
+.home-blocks-flex {
+  @media (min-width: $largebp) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.home-blocks-flex-left,
+.home-blocks-flex-right {
+  flex: 1;
+}
+
+.home-blocks-flex-left {
+  display: flex;
+
+  .home-block {
+    width: 100%;
+  }
+}

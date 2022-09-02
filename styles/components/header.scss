@@ -1,0 +1,33 @@
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  width: 120px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 40px;
+  gap: 40px;
+}
+
+.header-more {
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

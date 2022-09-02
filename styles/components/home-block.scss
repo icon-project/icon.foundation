@@ -1,0 +1,30 @@
+.home-block {
+  padding: 54px 60px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
+  &.gray {
+    background: $gray;
+  }
+
+  &.primary {
+    background: $primary;
+  }
+
+  &.secondary {
+    background: $secondary;
+  }
+
+  p {
+    margin-top: auto;
+  }
+}
+
+.home-block-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 60px;
+}
