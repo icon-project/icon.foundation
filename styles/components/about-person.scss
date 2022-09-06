@@ -1,0 +1,35 @@
+.about-person {
+  max-width: 274px;
+  text-align: center;
+
+  @media (min-width: $mediumbp) {
+    max-width: 310px;
+  }
+
+  @media (min-width: $largebp) {
+    max-width: 405px;
+  }
+
+  img {
+    border-radius: 300px;
+    margin-bottom: 20px;
+  }
+
+  h3,
+  h4 {
+    font-size: 14px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 24px;
+    }
+  }
+
+  h4 {
+    color: $primary;
+    margin-top: 5px;
+  }
+}

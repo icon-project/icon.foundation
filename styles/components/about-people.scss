@@ -1,0 +1,79 @@
+.about-people {
+  margin-top: 40px;
+
+  @media (min-width: $mediumbp) {
+    margin-top: 100px;
+  }
+}
+
+.about-people-flex {
+  @media (min-width: $mediumbp) {
+    display: flex;
+  }
+}
+
+.about-people-flex-left {
+  max-width: 711px;
+
+  @media (min-width: $mediumbp) {
+    margin-right: 80px;
+    width: 40%;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 24px;
+    }
+  }
+}
+
+.about-people-flex-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center;
+  flex: 1;
+  max-width: 900px;
+
+  @media (min-width: $mediumbp) {
+    display: block;
+    margin-top: 0;
+  }
+
+  .about-person {
+    @media (min-width: $mediumbp) {
+      width: 45%;
+    }
+  }
+
+  .about-person:nth-of-type(even) {
+    @media (min-width: $mediumbp) {
+      margin: -140px 0 -140px auto;
+    }
+
+    @media (min-width: $largebp) {
+      margin: -200px 0 -200px auto;
+    }
+
+    @media (min-width: $xlargebp) {
+      margin: -240px 0 -240px auto;
+    }
+  }
+}

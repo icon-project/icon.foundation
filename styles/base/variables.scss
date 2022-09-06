@@ -5,18 +5,20 @@ $primary: #32b8bb;
 $secondary: #4c3486;
 $text: #161d1c;
 $gray: #161d1c;
+$lightText: #b2b1b1;
+$border: #c8c7c6;
 
 // fonts
-$font: sans-serif;
+$font: "PolySans", sans-serif;
 
 // Breakpoints
 $tinybp: 374px;
 $smallbp: 500px;
 $smbp: 640px;
-$mediumbp: 800px;
-$largebp: 960px;
-$xlargebp: 1100px;
+$mediumbp: 960px;
+$largebp: 1100px;
+$xlargebp: 1300px;
 
 // Transitions
-$fadeOffTransition: left 0s 0.15s, opacity 0.15s;
-$fadeOnTransition: left 0s, opacity 0.15s;
+$fadeOff: left 0s 0.15s, opacity 0.15s;
+$fadeOn: left 0s, opacity 0.15s;

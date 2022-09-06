@@ -1,9 +1,14 @@
 .home-block {
-  padding: 54px 60px;
+  padding: 40px;
   border-radius: 60px;
   display: flex;
   flex-direction: column;
   color: $white;
+
+  @media (min-width: $mediumbp) {
+    height: 25vh;
+    min-height: 200px;
+  }
 
   &.gray {
     background: $gray;
@@ -17,8 +22,29 @@
     background: $secondary;
   }
 
+  h2 {
+    font-size: 18px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 24px;
+    }
+  }
+
   p {
     margin-top: auto;
+    font-size: 14px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -26,5 +52,13 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+
+  @media (min-width: $mediumbp) {
+    padding-bottom: 60px;
+  }
+
+  svg {
+    margin-left: auto;
+  }
 }

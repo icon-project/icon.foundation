@@ -1,9 +1,21 @@
 .home-top {
   padding-bottom: 48px;
-  padding-top: 150px;
+  padding-top: 100px;
+
+  @media (min-width: $mediumbp) {
+    padding-top: 0vh;
+  }
 
   h1 {
-    font-size: 64px;
+    font-size: 24px;
     max-width: 900px;
+
+    @media (min-width: $mediumbp) {
+      font-size: 48px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 64px;
+    }
   }
 }

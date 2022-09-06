@@ -20,17 +20,17 @@ export default function HomeBlocks({}: IProps) {
           </div>
           <div className="home-blocks-flex-right">
             <HomeBlock
-              heading="About us"
+              heading="Build"
               text="Learn more about Icon"
               url="/about"
-              icon="/images/about.svg"
+              icon="/images/build.svg"
               color="primary"
             />
             <HomeBlock
-              heading="About us"
+              heading="Grants"
               text="Learn more about Icon"
               url="/about"
-              icon="/images/about.svg"
+              icon="/images/grants.svg"
               color="secondary"
             />
           </div>
