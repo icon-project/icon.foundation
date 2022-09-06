@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import AboutBlocks from "../components/about/AboutBlocks";
+import AboutInvested from "../components/about/AboutInvested";
 import AboutPeople from "../components/about/AboutPeople";
 import AboutTop from "../components/about/AboutTop";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeBlocks from "../components/home/HomeBlocks";
 import HomeTop from "../components/home/HomeTop";
@@ -17,6 +20,9 @@ const Home: NextPage = () => {
       <Header />
       <AboutTop />
       <AboutPeople />
+      <AboutInvested />
+      <AboutBlocks />
+      <Footer />
     </div>
   );
 };

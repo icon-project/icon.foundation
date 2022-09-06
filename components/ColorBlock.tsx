@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
-import Arrow from "../../public/images/arrow-top-right.svg";
+import Arrow from "../public/images/arrow-top-right.svg";
 
 interface IProps {
   heading: string;
@@ -11,7 +11,13 @@ interface IProps {
   color: "gray" | "secondary" | "primary";
 }
 
-export default function HomeBlock({ heading, icon, text, url, color }: IProps) {
+export default function ColorBlock({
+  heading,
+  icon,
+  text,
+  url,
+  color,
+}: IProps) {
   return (
     <Link href={url}>
       <a className={classNames("home-block", color)}>

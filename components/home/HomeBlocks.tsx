@@ -1,6 +1,6 @@
 import React from "react";
 import Width from "../Width";
-import HomeBlock from "./HomeBlock";
+import ColorBlock from "../ColorBlock";
 
 interface IProps {}
 
@@ -10,7 +10,7 @@ export default function HomeBlocks({}: IProps) {
       <Width>
         <div className="home-blocks-flex">
           <div className="home-blocks-flex-left">
-            <HomeBlock
+            <ColorBlock
               heading="About us"
               text="Learn more about Icon"
               url="/about"
@@ -19,14 +19,14 @@ export default function HomeBlocks({}: IProps) {
             />
           </div>
           <div className="home-blocks-flex-right">
-            <HomeBlock
+            <ColorBlock
               heading="Build"
               text="Learn more about Icon"
               url="/about"
               icon="/images/build.svg"
               color="primary"
             />
-            <HomeBlock
+            <ColorBlock
               heading="Grants"
               text="Learn more about Icon"
               url="/about"
