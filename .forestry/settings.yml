@@ -13,8 +13,8 @@ sections:
   path: _p/home.md
   label: Homepage
 - type: directory
-  path: _pages
-  label: Pages
+  path: _basic-pages
+  label: Basic Pages
   create: all
   match: "**/*"
   templates:
