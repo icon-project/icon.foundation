@@ -1,3 +1,3 @@
 ---
-heading hey
+heading: hey
 ---
