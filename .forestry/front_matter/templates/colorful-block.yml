@@ -26,3 +26,9 @@ fields:
   config:
     required: false
   label: Url
+- name: background_color
+  type: color
+  label: Background color
+  config:
+    required: false
+    color_format: Hex
