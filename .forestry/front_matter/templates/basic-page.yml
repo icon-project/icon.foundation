@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Page title
+pages:
+- pages/testing.md
