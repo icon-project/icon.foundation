@@ -1,9 +1,0 @@
----
-label: Homepage
-hide_body: true
-fields:
-- name: headline
-  type: text
-  config:
-    required: false
-  label: Headline
