@@ -91,4 +91,10 @@
     text-decoration: underline;
     color: $gray;
   }
+
+  p img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 8px 0;
+  }
 }
