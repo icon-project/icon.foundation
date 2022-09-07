@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: Top text
+pages:
+- _pages/projects.md
