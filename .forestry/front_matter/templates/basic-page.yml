@@ -8,6 +8,3 @@ fields:
   config:
     required: false
   label: Page title
-pages:
-- _pages/privacy-policy.md
-- _pages/this-is-a-test.md

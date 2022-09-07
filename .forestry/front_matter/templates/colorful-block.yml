@@ -33,5 +33,3 @@ fields:
   config:
     required: false
     color_format: Hex
-pages:
-- _colorful-blocks/about.md
