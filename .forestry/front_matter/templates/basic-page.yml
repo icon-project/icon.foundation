@@ -7,11 +7,5 @@ fields:
   config:
     required: false
   label: Page title
-- name: slug
-  type: text
-  config:
-    required: false
-  label: Slug
-  description: Letters, numbers and hyphens only
 pages:
 - _pages/this-is-a-test.md
