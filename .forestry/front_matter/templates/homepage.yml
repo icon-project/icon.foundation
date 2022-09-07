@@ -1,9 +1,9 @@
 ---
-label: Home
+label: Homepage
 hide_body: true
 fields:
-- name: heading
+- name: headline
   type: text
   config:
     required: false
-  label: Heading
+  label: Headline
