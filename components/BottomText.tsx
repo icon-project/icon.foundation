@@ -1,11 +1,14 @@
-import React from "react";
-import Width from "../Width";
+import React, { Children } from "react";
+import Width from "./Width";
 
-export default function AboutInvested() {
+interface IProps {}
+
+export default function BottomText({}: IProps) {
   return (
-    <div className="about-invested">
+    <div className="bottom-text">
       <Width>
-        <div className="about-invested-text">
+        <div className="bottom-text-text">
+          {" "}
           <h2>We are invested in Creativity and Development</h2>
           <p>
             Lorem ipsum dolor sit amet consectut faciant aligna magna lorem

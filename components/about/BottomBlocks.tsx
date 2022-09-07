@@ -2,11 +2,11 @@ import React from "react";
 import ColorBlock from "../ColorBlock";
 import Width from "../Width";
 
-export default function AboutBlocks() {
+export default function BottomBlocks() {
   return (
-    <div className="about-blocks">
+    <div className="bottom-blocks">
       <Width>
-        <div className="about-blocks-flex">
+        <div className="bottom-blocks-flex">
           <ColorBlock
             heading="Build"
             text="Learn more about Icon"

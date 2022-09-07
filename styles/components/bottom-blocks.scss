@@ -1,0 +1,15 @@
+.bottom-blocks-flex {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  @media (min-width: $mediumbp) {
+    flex-direction: row;
+  }
+
+  .color-block {
+    @media (min-width: $mediumbp) {
+      flex: 1;
+    }
+  }
+}

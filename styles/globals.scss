@@ -4,14 +4,19 @@
 
 @import "./components/header";
 @import "./components/width";
+@import "./components/page-top";
+@import "./components/bottom-blocks";
+@import "./components/color-block";
+@import "./components/footer";
+@import "./components/bottom-text";
+@import "./components/button";
+
 @import "./components/home-top";
 @import "./components/home-blocks";
-@import "./components/home-block";
-@import "./components/about-top";
 @import "./components/about-people";
 @import "./components/about-person";
-@import "./components/about-invested";
-@import "./components/about-blocks";
-@import "./components/footer";
+@import "./components/projects-projects";
+@import "./components/projects-project";
+@import "./components/page-body";
 
 @import "./pages/home";

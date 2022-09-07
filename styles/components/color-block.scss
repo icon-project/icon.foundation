@@ -1,6 +1,6 @@
-.home-block {
+.color-block {
   padding: 40px;
-  border-radius: 60px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   color: $white;
@@ -8,6 +8,7 @@
   @media (min-width: $mediumbp) {
     height: 25vh;
     min-height: 200px;
+    border-radius: 60px;
   }
 
   &.gray {
@@ -48,7 +49,7 @@
   }
 }
 
-.home-block-header {
+.color-block-header {
   display: flex;
   align-items: center;
   gap: 15px;

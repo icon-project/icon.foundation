@@ -1,0 +1,11 @@
+.projects-projects {
+  margin: 100px 0;
+
+  @media (min-width: $mediumbp) {
+    margin: 150px 0;
+  }
+
+  .projects-project + .projects-project {
+    margin-top: 10px;
+  }
+}

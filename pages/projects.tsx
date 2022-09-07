@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import BottomBlocks from "../components/about/BottomBlocks";
-import AboutPeople from "../components/about/AboutPeople";
+import BottomText from "../components/BottomText";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PageTop from "../components/PageTop";
+import ProjectsProjects from "../components/projects/ProjectsProjects";
 import Icon from "../public/images/icon-placeholder.svg";
-import BottomText from "../components/BottomText";
 
-const About: NextPage = () => {
+const Projects: NextPage = () => {
   return (
     <div>
       <Head>
@@ -18,21 +18,20 @@ const About: NextPage = () => {
       </Head>
       <Header />
       <PageTop>
-        <h1>Building the future, today.</h1>
+        <h1>Our Projects</h1>
         <p>
-          The <Icon /> ICON Foundation is not the ICON Project. The ICON
-          Foundation is a public-benefit, non-profit <Icon /> organization that
-          supports open development of decentralized technologies by providing
-          financial support and by advising on business and technology
-          development practices.
+          The <Icon /> ICON Foundation provides support for open development of
+          decentralized technologies. These are the current main <Icon />{" "}
+          projects supported by this foundation.
         </p>
       </PageTop>
-      <AboutPeople />
+      <ProjectsProjects />
       <BottomText />
+
       <BottomBlocks />
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Projects;

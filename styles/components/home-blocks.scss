@@ -1,7 +1,7 @@
 .home-blocks {
   padding-bottom: 10px;
 
-  .home-block + .home-block {
+  .color-block + .color-block {
     margin-top: 10px;
   }
 }
@@ -24,7 +24,7 @@
 .home-blocks-flex-left {
   display: flex;
 
-  .home-block {
+  .color-block {
     width: 100%;
 
     @media (min-width: $mediumbp) {

@@ -20,8 +20,8 @@ export default function ColorBlock({
 }: IProps) {
   return (
     <Link href={url}>
-      <a className={classNames("home-block", color)}>
-        <span className="home-block-header">
+      <a className={classNames("color-block", color)}>
+        <span className="color-block-header">
           <img src={icon} alt={heading} />
           <h2>{heading}</h2>
           <Arrow />

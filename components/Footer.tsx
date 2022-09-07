@@ -11,35 +11,29 @@ export default function Footer() {
     <footer className="footer">
       <Width>
         <div className="footer-box">
-          <div className="footer-box-left">
-            <ul className="footer-social">
-              <li>
-                <Link href="/">
-                  <a>
-                    <Twitter />
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>
-                    <Discord />
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>
-                    <Github />
-                  </a>
-                </Link>
-              </li>
-            </ul>
-
-            <p>
-              <Logo /> 2022 &copy; ICON
-            </p>
-          </div>
+          <ul className="footer-social">
+            <li>
+              <Link href="/">
+                <a>
+                  <Twitter />
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>
+                  <Discord />
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>
+                  <Github />
+                </a>
+              </Link>
+            </li>
+          </ul>
 
           <div className="footer-nav">
             <h2>Foundation</h2>
@@ -77,6 +71,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          <p className="footer-copy">
+            <Logo /> 2022 &copy; ICON
+          </p>
         </div>
       </Width>
     </footer>

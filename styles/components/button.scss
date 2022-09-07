@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 0 24px;
+  border-radius: 100px;
+  background: $gray;
+  color: $white;
+  line-height: 60px;
+  font-size: 14px;
+
+  @media (min-width: $mediumbp) {
+    line-height: 74px;
+    font-size: 18px;
+    padding: 0 32px;
+  }
+
+  @media (min-width: $largebp) {
+    line-height: 89px;
+    font-size: 24px;
+  }
+
+  &.fullWidth {
+    display: flex;
+  }
+}
