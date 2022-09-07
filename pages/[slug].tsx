@@ -45,8 +45,6 @@ export async function getStaticProps({ params }: Params) {
   const page = getPostBySlug(params.slug, ["page_title", "slug", "content"]);
   const content = await markdownToHtml(page.content || "");
 
-  console.log(page);
-
   return {
     props: {
       page: {
