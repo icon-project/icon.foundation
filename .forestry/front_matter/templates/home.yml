@@ -1,9 +1,0 @@
----
-label: Home
-hide_body: true
-fields:
-- name: heading
-  type: text
-  config:
-    required: false
-  label: Heading
