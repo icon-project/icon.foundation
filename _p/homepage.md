@@ -1,3 +1,0 @@
----
-heading: Yo yo yo
----
