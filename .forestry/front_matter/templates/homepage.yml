@@ -1,4 +1,16 @@
 ---
 label: Homepage
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: colorful_blocks
+  type: blocks
+  label: Colorful Blocks
+  template_types: []
+  config:
+    min: 
+    max: 
