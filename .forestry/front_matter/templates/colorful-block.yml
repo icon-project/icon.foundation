@@ -1,6 +1,7 @@
 ---
 label: Colorful block
 hide_body: true
+display_field: heading
 fields:
 - name: icon
   type: file
