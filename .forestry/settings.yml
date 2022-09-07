@@ -5,15 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: pages
+  path: _pages
   label: Pages
   create: all
   match: "**/*"
   templates:
   - basic-page
-- type: document
-  path: page
-  label: Page
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
