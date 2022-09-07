@@ -1,4 +1,0 @@
----
-page_title: Home
-
----
