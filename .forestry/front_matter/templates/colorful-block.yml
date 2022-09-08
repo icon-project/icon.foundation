@@ -27,9 +27,18 @@ fields:
   config:
     required: false
   label: Url
-- name: background_color
-  type: color
-  label: Background color
+- name: color
+  type: select
+  default: []
   config:
     required: false
-    color_format: Hex
+    options:
+    - Primary
+    - Secondary
+    - Gray
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
