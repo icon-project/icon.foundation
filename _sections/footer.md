@@ -13,7 +13,7 @@ navigations:
     url: "/"
   - text: Forum
     url: "/"
-  - text: ''
-    url: ''
+  - text: Legal
+    url: "/"
 
 ---
