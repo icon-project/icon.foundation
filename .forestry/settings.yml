@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _sections/footer.md
   label: Footer
-  match: "**/*"
 - type: document
   path: _pages/projects.md
   label: Projects
