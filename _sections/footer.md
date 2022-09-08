@@ -15,5 +15,8 @@ navigations:
     url: "/"
   - text: Legal
     url: "/"
+social:
+- icon: "/uploads/twitter.svg"
+  url: https://twitter.com
 
 ---
