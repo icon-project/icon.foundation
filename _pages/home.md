@@ -1,5 +1,5 @@
 ---
-heading: heywerfwerfwerfe
+heading: We support open development for decentralized technologies
 homepage: We support open development for decentralized technologies
 colorful_blocks:
 - template: colorful-block
