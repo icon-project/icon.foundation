@@ -7,5 +7,13 @@ navigations:
     url: "/about"
   - text: Projects
     url: projects
+- heading: Community
+  links:
+  - text: Discord
+    url: "/"
+  - text: ''
+    url: ''
+  - text: ''
+    url: ''
 
 ---
