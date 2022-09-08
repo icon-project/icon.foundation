@@ -33,9 +33,9 @@ fields:
   config:
     required: false
     options:
-    - Primary
-    - Secondary
-    - Gray
+    - primary
+    - secondary
+    - gray
     source:
       type: simple
       section: 
