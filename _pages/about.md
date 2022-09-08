@@ -9,7 +9,8 @@ people_text: Council Members are the final approvers of grants delegated through
   ICON Foundation
 people: []
 bottom_blocks: []
-bottom_heading: ''
-bottom_text: ''
+bottom_heading: We are invested in Creativity and Development
+bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
+  dolor sit amet consectut faciant aligna magna.
 
 ---
