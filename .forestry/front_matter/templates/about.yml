@@ -75,3 +75,5 @@ fields:
     schema:
       format: markdown
   label: Bottom text
+pages:
+- _pages/about.md
