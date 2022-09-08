@@ -40,7 +40,8 @@
       height: 50px;
     }
   }
-  svg {
+  svg,
+  img {
     transform: scale(0.8);
 
     @media (min-width: $mediumbp) {

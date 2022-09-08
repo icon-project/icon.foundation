@@ -25,3 +25,11 @@ export interface IFooter {
     }
   ];
 }
+
+export interface IColorBlock {
+  icon: string;
+  heading: string;
+  description: string;
+  url: string;
+  color: "primary" | "secondary" | "gray";
+}

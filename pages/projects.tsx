@@ -9,7 +9,7 @@ import ProjectsProjects from "../components/projects/ProjectsProjects";
 import Icon from "../public/images/icon-placeholder.svg";
 import { getPageBySlug, getSectionBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
-import { IFooter, IProject } from "../types";
+import { IColorBlock, IFooter, IProject } from "../types";
 
 interface IProps {
   footer: IFooter;
@@ -17,6 +17,9 @@ interface IProps {
     heading: string;
     top_text: string;
     projects: IProject[];
+    bottom_heading: string;
+    bottom_text: string;
+    bottom_blocks: IColorBlock[];
   };
 }
 
@@ -34,9 +37,9 @@ const Projects: NextPage<IProps> = ({ page, footer }: IProps) => {
         <div dangerouslySetInnerHTML={{ __html: page.top_text }} />
       </PageTop>
       <ProjectsProjects projects={page.projects} />
-      <BottomText />
+      <BottomText heading={page.bottom_heading} text={page.bottom_text} />
 
-      <BottomBlocks />
+      <BottomBlocks blocks={page.bottom_blocks} />
       <Footer footer={footer} />
     </div>
   );
@@ -48,6 +51,9 @@ export async function getStaticProps() {
     "top_text",
     "projects",
     "image",
+    "bottom_heading",
+    "bottom_text",
+    "bottom_blocks",
   ]);
   const top_text = await markdownToHtml(page.top_text || "");
   const footer = getSectionBySlug("footer", [
