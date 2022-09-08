@@ -7,25 +7,20 @@ import Header from "../components/Header";
 import PageTop from "../components/PageTop";
 import ProjectsProjects from "../components/projects/ProjectsProjects";
 import Icon from "../public/images/icon-placeholder.svg";
-import { getPageBySlug } from "../lib/api";
+import { getPageBySlug, getSectionBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
+import { IFooter, IProject } from "../types";
 
 interface IProps {
+  footer: IFooter;
   page: {
     heading: string;
     top_text: string;
-    projects: [
-      {
-        title: string;
-        description: string;
-        url: string;
-        image: string;
-      }
-    ];
+    projects: IProject[];
   };
 }
 
-const Projects: NextPage<IProps> = ({ page }: IProps) => {
+const Projects: NextPage<IProps> = ({ page, footer }: IProps) => {
   return (
     <div>
       <Head>
@@ -42,7 +37,7 @@ const Projects: NextPage<IProps> = ({ page }: IProps) => {
       <BottomText />
 
       <BottomBlocks />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 };
@@ -55,11 +50,15 @@ export async function getStaticProps() {
     "image",
   ]);
   const top_text = await markdownToHtml(page.top_text || "");
-
-  console.log(page);
+  const footer = getSectionBySlug("footer", [
+    "copyright_text",
+    "navigations",
+    "social",
+  ]);
 
   return {
     props: {
+      footer,
       page: {
         ...page,
         top_text,

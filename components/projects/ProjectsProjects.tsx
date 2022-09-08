@@ -4,16 +4,10 @@ import Arrow from "../../public/images/arrow-top-right.svg";
 import Link from "next/link";
 import ProjectsProject from "./ProjectsProject";
 import Width from "../Width";
+import { IProject } from "../../types";
 
 interface IProps {
-  projects: [
-    {
-      title: string;
-      description: string;
-      url: string;
-      image: string;
-    }
-  ];
+  projects: IProject[];
 }
 
 export default function ProjectsProjects({ projects }: IProps) {
