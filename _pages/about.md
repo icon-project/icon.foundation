@@ -7,7 +7,16 @@ top_text: The ![](/uploads/icon-placeholder.svg) ICON Foundation is not the ICON
 people_heading: Council Members
 people_text: Council Members are the final approvers of grants delegated through the
   ICON Foundation
-people: []
+people:
+- name: Min Kim
+  role: President
+  image: "/uploads/min.jpg"
+- name: Pascal Schmid
+  role: Vice-President
+  image: "/uploads/pascal.jpg"
+- name: ''
+  role: ''
+  image: ''
 bottom_blocks:
 - template: colorful-block
   icon: "/uploads/build.svg"
