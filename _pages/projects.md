@@ -32,10 +32,11 @@ bottom_blocks:
   url: "/"
   background_color: "#32B8BB"
 - template: colorful-block
-  icon: ''
-  heading: ''
-  description: ''
-  url: ''
-  background_color: ''
+  icon: "/uploads/grants.svg"
+  heading: Grants
+  description: Pursue funding for your project via the various economic programs in
+    the ICON ecosystem
+  url: "/"
+  background_color: "#4C3486"
 
 ---
