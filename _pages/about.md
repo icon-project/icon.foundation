@@ -16,6 +16,13 @@ bottom_blocks:
     ICON ecosystem
   url: "/"
   color: primary
+- template: colorful-block
+  heading: Grants
+  description: Pursue funding for your project via the various economic programs in
+    the ICON ecosystem
+  url: "/"
+  color: secondary
+  icon: "/uploads/grants.svg"
 bottom_heading: We are invested in Creativity and Development
 bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
   dolor sit amet consectut faciant aligna magna.
