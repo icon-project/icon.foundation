@@ -20,5 +20,9 @@ projects:
     development, with a focus on providing infrastructure to support BTP.
   url: "/"
   image: "/uploads/project-placeholder.jpg"
+bottom_heading: We are invested in Creativity and Development
+bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
+  dolor sit amet consectut faciant aligna magna.
+bottom_blocks: []
 
 ---

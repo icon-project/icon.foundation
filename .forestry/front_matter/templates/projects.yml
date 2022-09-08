@@ -48,5 +48,26 @@ fields:
     max: 
     labelField: 
   label: Projects
+- name: bottom_heading
+  type: text
+  config:
+    required: false
+  label: Bottom heading
+- name: bottom_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Bottom text
+- name: bottom_blocks
+  type: blocks
+  label: Bottom Blocks
+  template_types: []
+  config:
+    min: 
+    max: 
 pages:
 - _pages/projects.md
