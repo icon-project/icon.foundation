@@ -14,16 +14,18 @@ export default function ProjectsProjects({ projects }: IProps) {
   return (
     <div className="projects-projects">
       <Width>
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
-            <ProjectsProject image={project.image}>
+            <ProjectsProject key={i} image={project.image}>
               <h2>{project.title}</h2>
               <p>{project.description}</p>
               <Link href={project.url}>
-                <Button>
-                  Visit
-                  <Arrow />
-                </Button>
+                <a>
+                  <Button>
+                    Visit
+                    <Arrow />
+                  </Button>
+                </a>
               </Link>
             </ProjectsProject>
           );

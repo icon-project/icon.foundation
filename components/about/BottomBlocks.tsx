@@ -13,9 +13,10 @@ export default function BottomBlocks({ blocks }: IProps) {
     <div className="bottom-blocks">
       <Width>
         <div className="bottom-blocks-flex">
-          {blocks.map((block) => {
+          {blocks.map((block, i) => {
             return (
               <ColorBlock
+                key={i}
                 heading={block.heading}
                 text={block.description}
                 url={block.url}

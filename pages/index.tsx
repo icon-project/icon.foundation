@@ -23,14 +23,14 @@ const Home: NextPage<IProps> = ({ page }: IProps) => {
       </Head>
       <Header />
       <HomeTop heading={page.heading} />
-      <HomeBlocks blocks={page.colorful_blocks} />
+      {page.colorful_blocks && <HomeBlocks blocks={page.colorful_blocks} />}
     </div>
   );
 };
 
 export async function getStaticProps() {
   const page = getPageBySlug("home", ["heading", "colorful_blocks"]);
-
+  console.log(page);
   return {
     props: {
       page,

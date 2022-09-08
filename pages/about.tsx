@@ -7,8 +7,14 @@ import Header from "../components/Header";
 import PageTop from "../components/PageTop";
 import Icon from "../public/images/icon-placeholder.svg";
 import BottomText from "../components/BottomText";
+import { getSectionBySlug } from "../lib/api";
+import { IFooter } from "../types";
 
-const About: NextPage = () => {
+interface IProps {
+  footer: IFooter;
+}
+
+const About: NextPage<IProps> = ({ footer }: IProps) => {
   return (
     <div>
       <Head>
@@ -28,11 +34,25 @@ const About: NextPage = () => {
         </p>
       </PageTop>
       <AboutPeople />
-      <BottomText />
-      <BottomBlocks />
-      <Footer />
+      {/* <BottomText />
+      <BottomBlocks /> */}
+      <Footer footer={footer} />
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const footer = getSectionBySlug("footer", [
+    "copyright_text",
+    "navigations",
+    "social",
+  ]);
+
+  return {
+    props: {
+      footer,
+    },
+  };
+}
 
 export default About;

@@ -17,9 +17,9 @@ export default function Footer({ footer }: IProps) {
       <Width>
         <div className="footer-box">
           <ul className="footer-social">
-            {footer.social.map((link) => {
+            {footer.social.map((link, i) => {
               return (
-                <li>
+                <li key={i}>
                   <Link href={link.url}>
                     <a>
                       <img src={link.icon} />
@@ -35,9 +35,9 @@ export default function Footer({ footer }: IProps) {
               <div key={i} className="footer-nav">
                 <h2>{nav.heading}</h2>
                 <ul>
-                  {nav.links.map((link) => {
+                  {nav.links.map((link, i) => {
                     return (
-                      <li>
+                      <li key={i}>
                         <Link href={link.url}>
                           <a>{link.text}</a>
                         </Link>

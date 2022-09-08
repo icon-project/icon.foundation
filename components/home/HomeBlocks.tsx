@@ -8,38 +8,35 @@ interface IProps {
 }
 
 export default function HomeBlocks({ blocks }: IProps) {
-  const firstBlock = blocks.shift();
-
+  console.log(blocks);
   return (
     <div className="home-blocks">
       <Width>
         <div className="home-blocks-flex">
           <div className="home-blocks-flex-left">
-            {firstBlock && (
-              <ColorBlock
-                heading={firstBlock.heading}
-                text={firstBlock.description}
-                url={firstBlock.url}
-                icon={firstBlock.icon}
-                color={firstBlock.color}
-              />
-            )}
+            <ColorBlock
+              heading={blocks[0].heading}
+              text={blocks[0].description}
+              url={blocks[0].url}
+              icon={blocks[0].icon}
+              color={blocks[0].color}
+            />
           </div>
           <div className="home-blocks-flex-right">
-            <ColorBlock
-              heading="Build"
-              text="Learn more about Icon"
-              url="/about"
-              icon="/images/build.svg"
-              color="primary"
-            />
-            <ColorBlock
-              heading="Grants"
-              text="Learn more about Icon"
-              url="/about"
-              icon="/images/grants.svg"
-              color="secondary"
-            />
+            {blocks.map((block, i) => {
+              if (i === 0) return;
+
+              return (
+                <ColorBlock
+                  key={i}
+                  heading={blocks[i].heading}
+                  text={blocks[i].description}
+                  url={blocks[i].url}
+                  icon={blocks[i].icon}
+                  color={blocks[i].color}
+                />
+              );
+            })}
           </div>
         </div>
       </Width>
