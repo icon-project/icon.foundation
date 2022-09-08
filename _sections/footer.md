@@ -16,6 +16,8 @@ navigations:
   - text: Legal
     url: "/"
 social:
+- icon: "/uploads/github.svg"
+  url: https://github.com
 - icon: "/uploads/discord.svg"
   url: https://discord.com
 - icon: "/uploads/twitter.svg"
