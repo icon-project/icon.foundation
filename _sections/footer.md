@@ -1,4 +1,5 @@
 ---
-copyright_text: Hello
+copyright_text: 2022 © ICON
+navigations: []
 
 ---
