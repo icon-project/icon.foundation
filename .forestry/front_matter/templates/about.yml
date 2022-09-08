@@ -1,4 +1,77 @@
 ---
 label: About
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: top_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Top text
+- name: people_heading
+  type: text
+  config:
+    required: false
+  label: People Heading
+- name: people_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: People text
+- name: people
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: role
+    type: text
+    config:
+      required: false
+    label: Role
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: People
+- name: bottom_blocks
+  type: blocks
+  label: Bottom Blocks
+  template_types:
+  - colorful-block
+  config:
+    min: 
+    max: 
+- name: bottom_heading
+  type: text
+  config:
+    required: false
+  label: Bottom heading
+- name: bottom_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Bottom text
