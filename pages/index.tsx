@@ -3,8 +3,17 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HomeBlocks from "../components/home/HomeBlocks";
 import HomeTop from "../components/home/HomeTop";
+import { getPageBySlug, getSectionBySlug } from "../lib/api";
+import { IColorBlock } from "../types";
 
-const Home: NextPage = () => {
+interface IProps {
+  page: {
+    heading: string;
+    colorful_blocks: IColorBlock[];
+  };
+}
+
+const Home: NextPage<IProps> = ({ page }: IProps) => {
   return (
     <div className="home-wrap">
       <Head>
@@ -13,10 +22,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <HomeTop />
-      <HomeBlocks />
+      <HomeTop heading={page.heading} />
+      <HomeBlocks blocks={page.colorful_blocks} />
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const page = getPageBySlug("home", ["heading", "colorful_blocks"]);
+
+  return {
+    props: {
+      page,
+    },
+  };
+}
 
 export default Home;
