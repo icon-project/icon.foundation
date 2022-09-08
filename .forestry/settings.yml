@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: _sections/footer.md
+  label: Footer
+  match: "**/*"
+- type: document
   path: _pages/projects.md
   label: Projects
 - type: document
