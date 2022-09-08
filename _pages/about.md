@@ -14,9 +14,9 @@ people:
 - name: Pascal Schmid
   role: Vice-President
   image: "/uploads/pascal.jpg"
-- name: ''
-  role: ''
-  image: ''
+- name: Kyoung June (KJ) Eee
+  role: Secretary
+  image: "/uploads/kyoung.jpg"
 bottom_blocks:
 - template: colorful-block
   icon: "/uploads/build.svg"
