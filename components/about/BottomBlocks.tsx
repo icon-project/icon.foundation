@@ -8,7 +8,6 @@ interface IProps {
 }
 
 export default function BottomBlocks({ blocks }: IProps) {
-  console.log(blocks);
   return (
     <div className="bottom-blocks">
       <Width>

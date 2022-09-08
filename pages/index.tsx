@@ -30,7 +30,6 @@ const Home: NextPage<IProps> = ({ page }: IProps) => {
 
 export async function getStaticProps() {
   const page = getPageBySlug("home", ["heading", "colorful_blocks"]);
-  console.log(page);
   return {
     props: {
       page,

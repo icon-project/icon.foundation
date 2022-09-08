@@ -8,7 +8,6 @@ interface IProps {
 }
 
 export default function HomeBlocks({ blocks }: IProps) {
-  console.log(blocks);
   return (
     <div className="home-blocks">
       <Width>

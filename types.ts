@@ -33,3 +33,9 @@ export interface IColorBlock {
   url: string;
   color: "primary" | "secondary" | "gray";
 }
+
+export interface IPerson {
+  name: string;
+  image: string;
+  role: string;
+}
