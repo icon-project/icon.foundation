@@ -1,0 +1,19 @@
+---
+label: Homepage
+hide_body: true
+fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: colorful_blocks
+    type: blocks
+    label: Blocks
+    template_types:
+      - colorful-block
+    config:
+      min:
+      max:
+pages:
+  - _pages/home.md
