@@ -65,7 +65,8 @@ fields:
 - name: bottom_blocks
   type: blocks
   label: Bottom Blocks
-  template_types: []
+  template_types:
+  - colorful-block
   config:
     min: 
     max: 

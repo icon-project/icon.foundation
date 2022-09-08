@@ -23,6 +23,19 @@ projects:
 bottom_heading: We are invested in Creativity and Development
 bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
   dolor sit amet consectut faciant aligna magna.
-bottom_blocks: []
+bottom_blocks:
+- template: colorful-block
+  icon: "/uploads/build.svg"
+  heading: Build
+  description: Participate in the development of decentralized technologies with the
+    ICON ecosystem
+  url: "/"
+  background_color: "#32B8BB"
+- template: colorful-block
+  icon: ''
+  heading: ''
+  description: ''
+  url: ''
+  background_color: ''
 
 ---
