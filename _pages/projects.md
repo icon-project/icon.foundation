@@ -9,13 +9,16 @@ projects:
     intended to support the goal of enabling communication between independent blockchain
     ecosystems
   url: "/"
+  image: "/uploads/project-placeholder.jpg"
 - title: Blockchain Transmission Protocol (BTP)
   description: Blockchain Transmission Protocol is a general purpose, blockchain-agnostic
     protocol for sending messages across independent blockchain.
   url: "/"
+  image: "/uploads/project-placeholder.jpg"
 - title: ICON Network
   description: ICON Network is an open blockchain for general-purpose smart contract
     development, with a focus on providing infrastructure to support BTP.
   url: "/"
+  image: "/uploads/project-placeholder.jpg"
 
 ---
