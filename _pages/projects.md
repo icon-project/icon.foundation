@@ -31,7 +31,7 @@ bottom_blocks:
     ICON ecosystem
   url: "/"
   background_color: "#32B8BB"
-  color: Primary
+  color: primary
 - template: colorful-block
   icon: "/uploads/grants.svg"
   heading: Grants
@@ -39,6 +39,6 @@ bottom_blocks:
     the ICON ecosystem
   url: "/"
   background_color: "#4C3486"
-  color: Secondary
+  color: secondary
 
 ---
