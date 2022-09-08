@@ -11,8 +11,8 @@ navigations:
   links:
   - text: Discord
     url: "/"
-  - text: ''
-    url: ''
+  - text: Forum
+    url: "/"
   - text: ''
     url: ''
 
