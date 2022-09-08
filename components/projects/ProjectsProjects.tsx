@@ -5,52 +5,35 @@ import Link from "next/link";
 import ProjectsProject from "./ProjectsProject";
 import Width from "../Width";
 
-export default function ProjectsProjects() {
+interface IProps {
+  projects: [
+    {
+      title: string;
+      description: string;
+      url: string;
+      image: string;
+    }
+  ];
+}
+
+export default function ProjectsProjects({ projects }: IProps) {
   return (
     <div className="projects-projects">
       <Width>
-        <ProjectsProject image="/images/project-placeholder.jpg">
-          <h2>Blockchain Transmission Protocol (BTP)</h2>
-          <p>
-            Blockchain Transmission Protocol is a general purpose,
-            blockchain-agnostic protocol for sending messages across independent
-            blockchain.
-          </p>
-          <Link href="/">
-            <Button>
-              Visit
-              <Arrow />
-            </Button>
-          </Link>
-        </ProjectsProject>
-        <ProjectsProject image="/images/project-placeholder.jpg">
-          <h2>Blockchain Transmission Protocol (BTP)</h2>
-          <p>
-            Blockchain Transmission Protocol is a general purpose,
-            blockchain-agnostic protocol for sending messages across independent
-            blockchain.
-          </p>
-          <Link href="/">
-            <Button>
-              Visit
-              <Arrow />
-            </Button>
-          </Link>
-        </ProjectsProject>
-        <ProjectsProject image="/images/project-placeholder.jpg">
-          <h2>Blockchain Transmission Protocol (BTP)</h2>
-          <p>
-            Blockchain Transmission Protocol is a general purpose,
-            blockchain-agnostic protocol for sending messages across independent
-            blockchain.
-          </p>
-          <Link href="/">
-            <Button>
-              Visit
-              <Arrow />
-            </Button>
-          </Link>
-        </ProjectsProject>
+        {projects.map((project) => {
+          return (
+            <ProjectsProject image={project.image}>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+              <Link href={project.url}>
+                <Button>
+                  Visit
+                  <Arrow />
+                </Button>
+              </Link>
+            </ProjectsProject>
+          );
+        })}
       </Width>
     </div>
   );

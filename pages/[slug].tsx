@@ -4,7 +4,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PageBody from "../components/PageBody";
-import { getAllPosts, getPostBySlug } from "../lib/api";
+import { getAllBasicPages, getBasicPageBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
 
 interface IProps {
@@ -42,7 +42,11 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const page = getPostBySlug(params.slug, ["page_title", "slug", "content"]);
+  const page = getBasicPageBySlug(params.slug, [
+    "page_title",
+    "slug",
+    "content",
+  ]);
   const content = await markdownToHtml(page.content || "");
 
   return {
@@ -56,7 +60,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllBasicPages(["slug"]);
 
   return {
     paths: posts.map((post) => {
