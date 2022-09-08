@@ -8,7 +8,14 @@ people_heading: Council Members
 people_text: Council Members are the final approvers of grants delegated through the
   ICON Foundation
 people: []
-bottom_blocks: []
+bottom_blocks:
+- template: colorful-block
+  icon: "/uploads/build.svg"
+  heading: Build
+  description: Participate in the development of decentralized technologies with the
+    ICON ecosystem
+  url: "/"
+  color: primary
 bottom_heading: We are invested in Creativity and Development
 bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
   dolor sit amet consectut faciant aligna magna.
