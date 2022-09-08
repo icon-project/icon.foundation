@@ -7,3 +7,36 @@ fields:
   config:
     required: false
   label: Copyright text
+- name: navigations
+  type: field_group_list
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: links
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Navigations
+pages:
+- _sections/footer.md
