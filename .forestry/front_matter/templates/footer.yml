@@ -38,5 +38,23 @@ fields:
     max: 
     labelField: 
   label: Navigations
+- name: social
+  type: field_group_list
+  fields:
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social
 pages:
 - _sections/footer.md
