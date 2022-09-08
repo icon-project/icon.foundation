@@ -7,11 +7,3 @@ fields:
   config:
     required: false
   label: Homepage
-- name: colorful_blocks
-  type: blocks
-  label: Colorful blocks
-  template_types:
-  - colorful-block
-  config:
-    min: 
-    max: 
