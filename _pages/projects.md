@@ -14,15 +14,15 @@ projects:
   description: ICON Network is an open blockchain for general-purpose smart contract
     development, with a focus on providing infrastructure to support BTP.
   url: "/"
-  image: "/uploads/project-placeholder.jpg"
-  logo: ''
+  image: "/uploads/icon-bg.svg"
+  logo: "/uploads/icon.svg"
 - title: ICE/SNOW Network
   description: ICE/SNOW Network is a pair of blockchains within the Polkadot ecosystem
     intended to support the goal of enabling communication between independent blockchain
     ecosystems
   url: "/"
-  image: "/uploads/project-placeholder.jpg"
-  logo: ''
+  image: "/uploads/snow-bg.svg"
+  logo: "/uploads/snow.svg"
 bottom_heading: We are invested in Creativity and Development
 bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
   dolor sit amet consectut faciant aligna magna.
