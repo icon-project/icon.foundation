@@ -69,3 +69,5 @@ fields:
     max: 
     labelField: 
   label: Inner navs
+pages:
+- _sections/header.md

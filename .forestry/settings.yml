@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _sections/header.md
   label: Header
-  match: "**/*"
 - type: document
   path: _pages/about.md
   label: About
