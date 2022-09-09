@@ -21,11 +21,11 @@ inner_navs:
 - heading: Community
   links:
   - text: Discord
-    url: https://discord.com
+    url: https://discord.com/invite/7a75Hf3cFm
   - text: Forum
-    url: "/"
+    url: https://forum.icon.community/
   - text: Legal
-    url: "/"
+    url: "/legal"
 - heading: Program
   links:
   - text: Build
