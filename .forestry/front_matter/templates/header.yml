@@ -1,4 +1,71 @@
 ---
 label: Header
 hide_body: true
-fields: []
+fields:
+- name: nav
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Nav
+- name: social
+  type: field_group_list
+  fields:
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social
+- name: inner_navs
+  type: field_group_list
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: links
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: Url
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Inner navs
