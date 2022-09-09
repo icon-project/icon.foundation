@@ -17,7 +17,7 @@ projects:
   url: "/"
   image: "/uploads/icon-bg.svg"
   logo: "/uploads/icon.svg"
-  logo_width: 
+  logo_width: 139
 - title: ICE/SNOW Network
   description: ICE/SNOW Network is a pair of blockchains within the Polkadot ecosystem
     intended to support the goal of enabling communication between independent blockchain
