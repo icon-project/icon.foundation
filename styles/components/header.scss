@@ -129,6 +129,14 @@
 }
 
 .header-overlay-nav {
+  &:last-of-type {
+    order: -1;
+
+    @media (min-width: $mediumbp) {
+      order: initial;
+    }
+  }
+
   & + & {
     //margin-top: 70px;
 
