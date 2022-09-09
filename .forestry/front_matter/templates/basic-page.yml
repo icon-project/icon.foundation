@@ -8,3 +8,5 @@ fields:
   config:
     required: false
   label: Page title
+pages:
+- _basic-pages/legal.md
