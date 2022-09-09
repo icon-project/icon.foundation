@@ -18,9 +18,7 @@ const Home: NextPage<IProps> = ({ page, header }: IProps) => {
   return (
     <div className="home-wrap">
       <Head>
-        <title>
-          Icon - We support open development for decentralized technologies
-        </title>
+        <title>Icon</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header header={header} />
