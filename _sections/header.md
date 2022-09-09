@@ -2,8 +2,8 @@
 nav:
 - text: Home
   url: "/"
-- text: ''
-  url: ''
+- text: Projects
+  url: "/projects"
 social: []
 inner_navs: []
 
