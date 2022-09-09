@@ -3,6 +3,8 @@ export interface IProject {
   description: string;
   url: string;
   image: string;
+  logo: string;
+  logo_width: number;
 }
 
 export interface IFooter {

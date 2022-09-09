@@ -16,7 +16,12 @@ export default function ProjectsProjects({ projects }: IProps) {
       <Width>
         {projects.map((project, i) => {
           return (
-            <ProjectsProject key={i} image={project.image}>
+            <ProjectsProject
+              logo_width={project.logo_width}
+              key={i}
+              image={project.image}
+              logo={project.logo}
+            >
               <h2>{project.title}</h2>
               <p>{project.description}</p>
               <Link href={project.url}>

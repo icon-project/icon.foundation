@@ -14,13 +14,16 @@
 
 .projects-project-left {
   margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: $mediumbp) {
-    margin-bottom: 00px;
+    margin-bottom: 0px;
   }
 
-  img {
+  & > img {
     border-radius: 30px;
+    max-width: none;
+    width: 100%;
 
     @media (min-width: $mediumbp) {
       border-radius: 60px;
@@ -28,13 +31,40 @@
   }
 }
 
-.projects-project-right {
+.projects-project-logo {
+  display: flex;
+  background: white;
+  position: absolute;
+  top: 50%;
+  width: 256px;
+  height: 176px;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(0.65);
+
   @media (min-width: $mediumbp) {
-    padding: 60px 115px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
   }
 
-  @media (min-width: $largebp) {
-    padding: 60px 155px;
+  img {
+    width: inherit;
+  }
+}
+
+.projects-project-right {
+  @media (min-width: $mediumbp) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $xlargebp) {
+    padding-left: 100px;
+  }
+
+  @media (min-width: $xxlargebp) {
+    padding-left: 150px;
   }
 
   h2 {

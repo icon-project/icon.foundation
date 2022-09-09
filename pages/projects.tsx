@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PageTop from "../components/PageTop";
 import ProjectsProjects from "../components/projects/ProjectsProjects";
-import Icon from "../public/images/icon-placeholder.svg";
 import { getPageBySlug, getSectionBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
 import { IColorBlock, IFooter, IHeader, IProject } from "../types";
