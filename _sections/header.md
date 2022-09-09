@@ -9,8 +9,8 @@ social:
   icon: "/uploads/twitter-dark.svg"
 - url: https://discord.com
   icon: "/uploads/discord-dark.svg"
-- url: ''
-  icon: ''
+- url: https://github.com
+  icon: "/uploads/github-dark.svg"
 inner_navs: []
 
 ---
