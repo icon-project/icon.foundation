@@ -1,9 +1,10 @@
 ---
 heading: Building the future, toda
-top_text: The ![](/uploads/icon-placeholder.svg) ICON Foundation is not the ICON Project.
-  The ICON Foundation is a public-benefit, non-profit ![](/uploads/icon-placeholder.svg)
+top_text: The ![](/uploads/icon-icon.svg) ICON Foundation is not the ICON Project.
+  The ICON Foundation is a public-benefit, non-profit ![](/uploads/icon-people.svg)
   organization that supports open development of decentralized technologies by providing
-  financial support and by advising on business and technology development practices.
+  ![](/uploads/icon-grants.svg) financial support and by advising on business and
+  technology development practices.
 people_heading: Council Members
 people_text: Council Members are the final approvers of grants delegated through the
   ICON Foundation
