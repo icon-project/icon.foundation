@@ -4,7 +4,13 @@ nav:
   url: "/"
 - text: Projects
   url: "/projects"
-social: []
+social:
+- url: https://twitter.com
+  icon: "/uploads/twitter-dark.svg"
+- url: ''
+  icon: ''
+- url: ''
+  icon: ''
 inner_navs: []
 
 ---
