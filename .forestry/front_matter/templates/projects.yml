@@ -42,7 +42,12 @@ fields:
     type: file
     config:
       maxSize: 64
-    label: Image
+    label: Background image
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
   config:
     min: 
     max: 
