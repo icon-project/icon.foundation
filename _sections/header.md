@@ -18,8 +18,14 @@ inner_navs:
     url: "/about"
   - text: Projects
     url: "/projects"
-- heading: ''
-  links: []
+- heading: Community
+  links:
+  - text: Discord
+    url: https://discord.com
+  - text: Forum
+    url: "/"
+  - text: Legal
+    url: "/"
 - heading: ''
   links: []
 
