@@ -25,9 +25,9 @@ export default function Header({ header }: { header: IHeader }) {
             </a>
           </Link>
           <ul className="header-nav">
-            {header.nav.map((link) => {
+            {header.nav.map((link, i) => {
               return (
-                <li>
+                <li key={i}>
                   <Link href={link.url}>
                     <a>{link.text}</a>
                   </Link>
@@ -65,12 +65,12 @@ export default function Header({ header }: { header: IHeader }) {
               const last = lastNav === i;
 
               return (
-                <div className="header-overlay-nav">
+                <div key={i} className="header-overlay-nav">
                   <h2>{nav.heading}</h2>
                   <ul>
-                    {nav.links.map((link) => {
+                    {nav.links.map((link, i) => {
                       return (
-                        <li>
+                        <li key={i}>
                           <Link href={link.url}>
                             <a>
                               {link.text}
@@ -87,9 +87,9 @@ export default function Header({ header }: { header: IHeader }) {
           </div>
 
           <ul className="header-overlay-social">
-            {header.social.map((link) => {
+            {header.social.map((link, i) => {
               return (
-                <li>
+                <li key={i}>
                   <Link href={link.url}>
                     <a>
                       <img src={link.icon} />
