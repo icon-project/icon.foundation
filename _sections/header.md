@@ -7,8 +7,8 @@ nav:
 social:
 - url: https://twitter.com
   icon: "/uploads/twitter-dark.svg"
-- url: ''
-  icon: ''
+- url: https://discord.com
+  icon: "/uploads/discord-dark.svg"
 - url: ''
   icon: ''
 inner_navs: []
