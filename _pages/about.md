@@ -1,5 +1,5 @@
 ---
-heading: Building the future, toda
+heading: Building the future, today
 top_text: The ![](/uploads/icon-icon.svg) ICON Foundation is not the ICON Project.
   The ICON Foundation is a public-benefit, non-profit ![](/uploads/icon-people.svg)
   organization that supports open development of decentralized technologies by providing
