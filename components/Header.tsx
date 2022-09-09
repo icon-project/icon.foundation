@@ -8,10 +8,12 @@ import Dotdotdot from "../public/images/dotdotdot.svg";
 import Twitter from "../public/images/twitter.svg";
 import Discord from "../public/images/discord.svg";
 import Github from "../public/images/github.svg";
+import { IHeader } from "../types";
 
-export default function Header() {
+export default function Header({ header }: { header: IHeader }) {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => setOpen(!open);
+  const lastNav = header.inner_navs.length - 1;
 
   return (
     <header className="header">
@@ -23,16 +25,15 @@ export default function Header() {
             </a>
           </Link>
           <ul className="header-nav">
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/projects">
-                <a>Projects</a>
-              </Link>
-            </li>
+            {header.nav.map((link) => {
+              return (
+                <li>
+                  <Link href={link.url}>
+                    <a>{link.text}</a>
+                  </Link>
+                </li>
+              );
+            })}
             <li>
               <button className="header-more" onClick={toggleMenu}>
                 <Dotdotdot />
@@ -60,76 +61,43 @@ export default function Header() {
           </div>
 
           <div className="header-overlay-navs">
-            <div className="header-overlay-nav">
-              <h2>Foundation</h2>
-              <ul>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/projects">Projects</Link>
-                </li>
-              </ul>
-            </div>
+            {header.inner_navs.map((nav, i) => {
+              const last = lastNav === i;
 
-            <div className="header-overlay-nav">
-              <h2>Community</h2>
-              <ul>
-                <li>
-                  <Link href="#">Discord</Link>
-                </li>
-                <li>
-                  <Link href="#">Forum</Link>
-                </li>
-                <li>
-                  <Link href="#">Legal</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="header-overlay-nav">
-              <h2>Program</h2>
-              <ul>
-                <li>
-                  <Link href="#">
-                    <a className="header-overlay-build">
-                      Build <Arrow />
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <a className="header-overlay-growth">
-                      Growth <Arrow />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              return (
+                <div className="header-overlay-nav">
+                  <h2>{nav.heading}</h2>
+                  <ul>
+                    {nav.links.map((link) => {
+                      return (
+                        <li>
+                          <Link href={link.url}>
+                            <a>
+                              {link.text}
+                              {last && <Arrow />}
+                            </a>
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
 
           <ul className="header-overlay-social">
-            <li>
-              <Link href="https://twitter.com">
-                <a>
-                  <Twitter />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://twitter.com">
-                <a>
-                  <Discord />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://twitter.com">
-                <a>
-                  <Github />
-                </a>
-              </Link>
-            </li>
+            {header.social.map((link) => {
+              return (
+                <li>
+                  <Link href={link.url}>
+                    <a>
+                      <img src={link.icon} />
+                    </a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Width>
       </div>

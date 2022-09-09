@@ -152,18 +152,18 @@
     }
   }
 
-  a.header-overlay-build {
+  &:last-of-type li:first-of-type a {
     color: $primary;
   }
 
-  a.header-overlay-growth {
+  &:last-of-type li:last-of-type a {
     color: $secondary;
   }
 
   svg {
     display: inline-block;
     vertical-align: middle;
-    margin: -15px 0 0;
+    margin: -15px 0 0 10px;
   }
 }
 

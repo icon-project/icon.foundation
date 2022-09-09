@@ -26,6 +26,32 @@ export interface IFooter {
   ];
 }
 
+export interface IHeader {
+  nav: [
+    {
+      text: string;
+      url: string;
+    }
+  ];
+  social: [
+    {
+      url: string;
+      icon: string;
+    }
+  ];
+  inner_navs: [
+    {
+      heading: string;
+      links: [
+        {
+          text: string;
+          url: string;
+        }
+      ];
+    }
+  ];
+}
+
 export interface IColorBlock {
   icon: string;
   heading: string;
