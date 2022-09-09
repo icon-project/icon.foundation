@@ -6,15 +6,15 @@ navigations:
   - text: About
     url: "/about"
   - text: Projects
-    url: projects
+    url: "/projects"
 - heading: Community
   links:
   - text: Discord
-    url: "/"
+    url: https://discord.com/invite/7a75Hf3cFm
   - text: Forum
-    url: "/"
+    url: https://forum.icon.community/
   - text: Legal
-    url: "/"
+    url: "/legal"
 social:
 - icon: "/uploads/github.svg"
   url: https://github.com
