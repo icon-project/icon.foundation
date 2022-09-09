@@ -1,8 +1,8 @@
 ---
 heading: Our Projects
-top_text: The ![](/uploads/icon-placeholder.svg)ICON Foundation provides support for
-  open development of decentralized technologies. These are the current main ![](/uploads/icon-placeholder.svg)projects
-  supported by this foundation.
+top_text: The ![](/uploads/icon-icon.svg) ICON Foundation provides support for open
+  development of decentralized technologies. These are the current main ![](/uploads/icon-build.svg)
+  projects supported by this foundation.
 projects:
 - title: Blockchain Transmission Protocol (BTP)
   description: Blockchain Transmission Protocol is a general purpose, blockchain-agnostic
