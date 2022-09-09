@@ -25,7 +25,7 @@ projects:
   url: "/"
   image: "/uploads/snow-bg.svg"
   logo: "/uploads/snow.svg"
-  logo_width: 
+  logo_width: 185
 bottom_heading: We are invested in Creativity and Development
 bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
   dolor sit amet consectut faciant aligna magna.
