@@ -5,11 +5,11 @@ nav:
 - text: Projects
   url: "/projects"
 social:
-- url: https://twitter.com
+- url: https://twitter.com/helloiconworld
   icon: "/uploads/twitter-dark.svg"
-- url: https://discord.com
+- url: https://discord.com/invite/7a75Hf3cFm
   icon: "/uploads/discord-dark.svg"
-- url: https://github.com
+- url: https://github.com/icon-project
   icon: "/uploads/github-dark.svg"
 inner_navs:
 - heading: Foundation
