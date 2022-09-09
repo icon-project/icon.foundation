@@ -16,11 +16,11 @@ navigations:
   - text: Legal
     url: "/legal"
 social:
-- icon: "/uploads/github.svg"
-  url: https://github.com/icon-project
-- icon: "/uploads/discord.svg"
-  url: https://discord.com/invite/7a75Hf3cFm
 - icon: "/uploads/twitter.svg"
   url: https://twitter.com/helloiconworld
+- icon: "/uploads/discord.svg"
+  url: https://discord.com/invite/7a75Hf3cFm
+- icon: "/uploads/github.svg"
+  url: https://github.com/icon-project
 
 ---
