@@ -6,7 +6,7 @@
   background: $gray;
   color: white;
   border-radius: 30px;
-  padding: 60px 50px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -16,6 +16,7 @@
     border-radius: 60px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 60px 50px;
   }
 }
 
@@ -33,11 +34,17 @@
     justify-content: center;
     width: 62px;
     height: 32px;
+    transition: 0.2s transform, 0.2s background-color;
 
     @media (min-width: $mediumbp) {
       font-size: 18px;
       width: 90px;
       height: 50px;
+    }
+
+    &:hover {
+      background-color: #1f2222;
+      transform: scale(1.08);
     }
   }
   svg,
@@ -71,17 +78,26 @@
   h2 {
     color: white;
     line-height: 1.6;
-    margin-bottom: 5px;
+  }
+
+  li {
+    margin-top: 5px;
   }
 
   a {
     color: $primary;
+    transition: 0.2s color;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
 
 .footer-copy {
   width: 100%;
   font-size: 14px;
+  margin-top: 40px;
 
   @media (min-width: $mediumbp) {
     margin-top: 120px;
@@ -92,7 +108,8 @@
     font-size: 20px;
   }
 
-  svg {
+  svg,
+  img {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;

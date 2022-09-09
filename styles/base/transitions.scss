@@ -1,0 +1,21 @@
+.transition-effect {
+  overflow: hidden;
+}
+
+.fade-in-effect {
+  opacity: 0;
+  transition: 0.4s opacity, 0.4s transform;
+  transform: translateY(60px);
+
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex;
+}

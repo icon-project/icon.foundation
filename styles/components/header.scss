@@ -6,9 +6,14 @@
 .header-logo {
   display: block;
   width: 60px;
+  transition: 0.2s transform;
 
   @media (min-width: $mediumbp) {
     width: 120px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
   }
 }
 
@@ -33,6 +38,7 @@
     color: $text;
     font-size: 18px;
     display: none;
+    transition: 0.2s color, 0.2s transform;
 
     @media (min-width: $mediumbp) {
       display: block;
@@ -40,6 +46,11 @@
 
     @media (min-width: $largebp) {
       font-size: 20px;
+    }
+
+    &:hover {
+      color: $primary;
+      transform: translateY(-2px);
     }
   }
 }
@@ -52,10 +63,16 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: 0.2s transform, 0.2s background-color;
 
   @media (min-width: $mediumbp) {
     width: 60px;
     height: 60px;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    background-color: $primaryHover;
   }
 }
 
@@ -142,6 +159,7 @@
   a {
     color: $text;
     font-size: 32px;
+    transition: 0.2s color;
 
     @media (min-width: $mediumbp) {
       font-size: 48px;
@@ -149,6 +167,19 @@
 
     @media (min-width: $largebp) {
       font-size: 64px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &:last-of-type li:first-of-type a,
+  &:last-of-type li:last-of-type a {
+    transition: 0.2s color;
+
+    &:hover {
+      color: $text;
     }
   }
 
@@ -182,5 +213,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s transform, 0.2s background-color;
+
+    &:hover {
+      transform: scale(1.06);
+      background-color: #f1f1f1;
+    }
   }
 }

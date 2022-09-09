@@ -9,6 +9,7 @@
   color: $white;
   line-height: 60px;
   font-size: 14px;
+  transition: 0.2s transform, 0.2s background-color;
 
   @media (min-width: $mediumbp) {
     line-height: 74px;
@@ -19,6 +20,11 @@
   @media (min-width: $largebp) {
     line-height: 89px;
     font-size: 24px;
+  }
+
+  &:hover {
+    background-color: $primary;
+    transform: scale(1.02);
   }
 
   &.fullWidth {

@@ -57,6 +57,23 @@
     }
   }
 
+  h3 {
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+    @media (min-width: $mediumbp) {
+      font-size: 20px;
+      margin-top: 80px;
+    }
+
+    @media (min-width: $largebp) {
+      font-size: 26px;
+      margin-top: 100px;
+    }
+  }
+
   blockquote {
     border-left: 6px solid $gray;
     padding-left: 32px;
@@ -90,6 +107,11 @@
   a {
     text-decoration: underline;
     color: $gray;
+    transition: 0.2s color;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   p img {

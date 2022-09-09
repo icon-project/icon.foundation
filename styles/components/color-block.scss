@@ -1,26 +1,44 @@
 .color-block {
-  padding: 40px;
+  padding: 30px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   color: $white;
+  transition: 0.2s transform, 0.2s background-color;
 
   @media (min-width: $mediumbp) {
     height: 25vh;
+    padding: 40px;
     min-height: 240px;
     border-radius: 60px;
   }
 
+  &:hover {
+    transform: scale(1.005);
+  }
+
   &.gray {
-    background: $gray;
+    background-color: $gray;
+
+    &:hover {
+      background-color: $grayHover;
+    }
   }
 
   &.primary {
-    background: $primary;
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primaryHover;
+    }
   }
 
   &.secondary {
-    background: $secondary;
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryHover;
+    }
   }
 
   h2 {
@@ -38,6 +56,7 @@
   p {
     margin-top: auto;
     font-size: 14px;
+    line-height: 1.25;
 
     @media (min-width: $mediumbp) {
       font-size: 18px;
@@ -53,7 +72,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 
   @media (min-width: $mediumbp) {
     padding-bottom: 60px;
@@ -61,5 +80,10 @@
 
   svg {
     margin-left: auto;
+    width: 16px;
+
+    @media (min-width: $mediumbp) {
+      width: auto;
+    }
   }
 }

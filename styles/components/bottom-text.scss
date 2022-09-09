@@ -1,5 +1,5 @@
 .bottom-text {
-  padding: 40px 0;
+  padding: 40px 0 30px;
 }
 
 .bottom-text-text {
@@ -8,7 +8,7 @@
   h2 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @media (min-width: $mediumbp) {
       font-size: 24px;

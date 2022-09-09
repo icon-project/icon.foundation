@@ -13,6 +13,12 @@
 }
 
 .projects-project-left {
+  margin-bottom: 30px;
+
+  @media (min-width: $mediumbp) {
+    margin-bottom: 00px;
+  }
+
   img {
     border-radius: 30px;
 
