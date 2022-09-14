@@ -12,12 +12,12 @@ people:
 - name: Min Kim
   role: President
   image: "/uploads/min.jpg"
-- name: Pascal Schmid
-  role: Vice-President
-  image: "/uploads/pascal.jpg"
 - name: Kyoung June (KJ) Eee
-  role: Secretary
+  role: Vice-President
   image: "/uploads/kyoung.jpg"
+- name: Pascal Schmid
+  role: Secretary
+  image: "/uploads/pascal.jpg"
 bottom_blocks:
 - template: colorful-block
   icon: "/uploads/build.svg"
