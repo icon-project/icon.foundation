@@ -10,7 +10,7 @@ people_text: Council Members are the final approvers of grants delegated through
   ICON Foundation
 people:
 - name: Min Kim
-  role: President
+  role: Council Member
   image: "/uploads/min.jpg"
 - name: Kyoung June (KJ) Eee
   role: Vice-President
