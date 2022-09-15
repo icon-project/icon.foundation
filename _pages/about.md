@@ -13,10 +13,10 @@ people:
   role: Council Member
   image: "/uploads/min.jpg"
 - name: Kyoung June (KJ) Eee
-  role: Vice-President
+  role: Council Member
   image: "/uploads/kyoung.jpg"
 - name: Pascal Schmid
-  role: Secretary
+  role: Council Member
   image: "/uploads/pascal.jpg"
 bottom_blocks:
 - template: colorful-block
