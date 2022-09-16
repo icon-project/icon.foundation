@@ -12,9 +12,6 @@ people:
 - name: Min Kim
   role: Council Member
   image: "/uploads/min.jpg"
-- name: Kyoung June (KJ) Eee
-  role: Council Member
-  image: "/uploads/kyoung.jpg"
 - name: Pascal Schmid
   role: Council Member
   image: "/uploads/pascal.jpg"
