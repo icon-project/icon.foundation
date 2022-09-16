@@ -65,15 +65,21 @@
 
   .about-person:nth-of-type(even) {
     @media (min-width: $mediumbp) {
-      margin: -140px 0 -140px auto;
+      margin-left: auto;
     }
+  }
 
-    @media (min-width: $largebp) {
-      margin: -200px 0 -200px auto;
+  .about-person + .about-person {
+    @media (min-width: $mediumbp) {
+      margin-top: -100px;
     }
 
     @media (min-width: $xlargebp) {
-      margin: -240px 0 -240px auto;
+      margin-top: -140px;
+    }
+
+    @media (min-width: $xxlargebp) {
+      margin-top: -180px;
     }
   }
 }
