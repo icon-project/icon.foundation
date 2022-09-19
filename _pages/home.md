@@ -13,14 +13,14 @@ colorful_blocks:
   heading: Build
   description: Participate in the development of decentralized technologies with the
     ICON ecosystem
-  url: "/"
+  url: https://build.icon.foundation/
   color: primary
 - template: colorful-block
   icon: "/uploads/grants.svg"
   heading: Grants
-  description: Pursue funding for your project via the various economic programs in
-    the ICON ecosystem
-  url: "/"
+  description: Pursue funding for your roles or projects via the various economic
+    programs in the ICON ecosystem
+  url: https://build.icon.foundation/grants/
   color: secondary
 
 ---
