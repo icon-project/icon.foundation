@@ -23,7 +23,7 @@ interface IProps {
 }
 
 const BasicPage: NextPage<IProps> = ({ page, header, footer }: IProps) => {
-  const title = `Icon - ${page.page_title}`;
+  const title = `ICON - ${page.page_title}`;
 
   return (
     <div>

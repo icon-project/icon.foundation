@@ -18,7 +18,7 @@ const Home: NextPage<IProps> = ({ page, header }: IProps) => {
   return (
     <div className="home-wrap">
       <Head>
-        <title>Icon</title>
+        <title>ICON</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header header={header} />
