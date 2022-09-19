@@ -30,7 +30,7 @@ inner_navs:
   links:
   - text: Build
     url: "/"
-  - text: Growth
-    url: "/"
+  - text: Grants
+    url: https://build.icon.community/grants
 
 ---
