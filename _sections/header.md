@@ -29,7 +29,7 @@ inner_navs:
 - heading: Program
   links:
   - text: Build
-    url: "/"
+    url: https://build.icon.community/
   - text: Grants
     url: https://build.icon.community/grants
 
