@@ -27,7 +27,7 @@ const Projects: NextPage<IProps> = ({ page, footer, header }: IProps) => {
   return (
     <div>
       <Head>
-        <title>Icon - Projects</title>
+        <title>ICON - Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header header={header} />
