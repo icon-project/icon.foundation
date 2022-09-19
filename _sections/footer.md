@@ -9,12 +9,6 @@ navigations:
     url: "/projects"
   - text: Legal
     url: "/legal"
-- heading: Community
-  links:
-  - text: Discord
-    url: https://discord.com/invite/7a75Hf3cFm
-  - text: Forum
-    url: https://forum.icon.community/
 social:
 - icon: "/uploads/twitter.svg"
   url: https://twitter.com/helloiconworld
