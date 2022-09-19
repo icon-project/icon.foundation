@@ -18,15 +18,15 @@ inner_navs:
     url: "/about"
   - text: Projects
     url: "/projects"
+  - text: Legal
+    url: "/legal"
 - heading: Community
   links:
   - text: Discord
     url: https://discord.com/invite/7a75Hf3cFm
   - text: Forum
     url: https://forum.icon.community/
-  - text: Legal
-    url: "/legal"
-- heading: Program
+- heading: Participate
   links:
   - text: Build
     url: https://build.icon.community/
