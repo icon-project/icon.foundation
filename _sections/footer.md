@@ -1,5 +1,5 @@
 ---
-copyright_text: 2022 © ICON
+copyright_text: 2022 © ICON Foundation
 navigations:
 - heading: Foundation
   links:
