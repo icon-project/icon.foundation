@@ -7,22 +7,22 @@ projects:
 - title: Blockchain Transmission Protocol (BTP)
   description: Blockchain Transmission Protocol is a general purpose, blockchain-agnostic
     protocol for sending messages across independent blockchain.
-  url: "/"
+  url: https://github.com/icon-project/btp
   image: "/uploads/btp-bg.svg"
   logo: "/uploads/btp.svg"
   logo_width: 136
 - title: ICON Network
   description: ICON Network is an open blockchain for general-purpose smart contract
     development, with a focus on providing infrastructure to support BTP.
-  url: "/"
+  url: https://icon.community
   image: "/uploads/icon-bg.svg"
   logo: "/uploads/icon.svg"
   logo_width: 139
 - title: ICE/SNOW Network
-  description: ICE/SNOW Network is a pair of blockchains within the Polkadot ecosystem
-    intended to support the goal of enabling communication between independent blockchain
-    ecosystems
-  url: "/"
+  description: ICE and SNOW Networks are a pair of parachains within the Polkadot/Kusama
+    ecosystems. Both parachains are intended to support the goal of enabling BTP communication
+    between independent blockchain ecosystems
+  url: https://icenetwork.io
   image: "/uploads/snow-bg.svg"
   logo: "/uploads/snow.svg"
   logo_width: 185
