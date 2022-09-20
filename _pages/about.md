@@ -6,8 +6,7 @@ top_text: The ![](/uploads/icon-icon.svg) ICON Foundation is not the ICON Projec
   ![](/uploads/icon-grants.svg) financial support and by advising on business and
   technology development practices.
 people_heading: Council Members
-people_text: Council Members are the final approvers of grants delegated through the
-  ICON Foundation
+people_text: Council Members oversee all activities of the ICON Foundation
 people:
 - name: Min Kim
   role: Council Member
@@ -21,17 +20,17 @@ bottom_blocks:
   heading: Build
   description: Participate in the development of decentralized technologies with the
     ICON ecosystem
-  url: "/"
+  url: https://build.icon.foundation/
   color: primary
 - template: colorful-block
   heading: Grants
-  description: Pursue funding for your project via the various economic programs in
-    the ICON ecosystem
-  url: "/"
+  description: Pursue funding for your roles or projects via the various economic
+    programs in the ICON ecosystem
+  url: https://build.icon.foundation/grants/
   color: secondary
   icon: "/uploads/grants.svg"
 bottom_heading: We are invested in Creativity and Development
-bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
-  dolor sit amet consectut faciant aligna magna.
+bottom_text: The ICON Foundation encourages motivated communities to support open,
+  decentralized technologies through all types of efforts
 
 ---
