@@ -27,8 +27,8 @@ projects:
   logo: "/uploads/snow.svg"
   logo_width: 185
 bottom_heading: We are invested in Creativity and Development
-bottom_text: Lorem ipsum dolor sit amet consectut faciant aligna magna lorem ipsum
-  dolor sit amet consectut faciant aligna magna.
+bottom_text: The ICON Foundation encourages motivated communities to support open,
+  decentralized technologies through all types of efforts
 bottom_blocks:
 - template: colorful-block
   icon: "/uploads/build.svg"
@@ -41,8 +41,8 @@ bottom_blocks:
 - template: colorful-block
   icon: "/uploads/grants.svg"
   heading: Grants
-  description: Pursue funding for your project via the various economic programs in
-    the ICON ecosystem
+  description: Pursue funding for your roles or projects via the various economic
+    programs in the ICON ecosystem
   url: https://build.icon.foundation/grants/
   background_color: "#4C3486"
   color: secondary
