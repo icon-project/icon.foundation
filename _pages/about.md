@@ -13,7 +13,7 @@ people:
   image: "/uploads/min.jpg"
 - name: Pascal Schmid
   role: Council Member
-  image: "/uploads/pascal.jpg"
+  image: "/uploads/pascal-schmid-portrait.png"
 bottom_blocks:
 - template: colorful-block
   icon: "/uploads/build.svg"
