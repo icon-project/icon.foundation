@@ -31,6 +31,6 @@ inner_navs:
   - text: Build
     url: https://build.icon.foundation/
   - text: Grants
-    url: https://build.icon.community/grants
+    url: https://build.icon.foundation/grants
 
 ---
