@@ -5,7 +5,7 @@ colorful_blocks:
 - template: colorful-block
   icon: "/uploads/about.svg"
   heading: About us
-  description: Learn more about Icon
+  description: Learn more about ICON
   url: "/about"
   color: gray
 - template: colorful-block
