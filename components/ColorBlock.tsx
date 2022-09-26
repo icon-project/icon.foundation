@@ -18,9 +18,16 @@ export default function ColorBlock({
   url,
   color,
 }: IProps) {
+  const b =
+    url.indexOf("build.icon.foundation") > -1 ||
+    url.indexOf("build.icon.foundation/grants") > -1;
+
   return (
     <Link href={url}>
-      <a className={classNames("color-block", color)}>
+      <a
+        target={b ? "_blank" : undefined}
+        className={classNames("color-block", color)}
+      >
         <span className="color-block-header">
           <img src={icon} alt={heading} />
           <h2>{heading}</h2>

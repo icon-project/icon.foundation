@@ -69,10 +69,14 @@ export default function Header({ header }: { header: IHeader }) {
                   <h2>{nav.heading}</h2>
                   <ul>
                     {nav.links.map((link, i) => {
+                      const b =
+                        link.url.indexOf("build.icon.foundation") > -1 ||
+                        link.url.indexOf("build.icon.foundation/grants") > -1;
+
                       return (
                         <li key={i}>
                           <Link href={link.url}>
-                            <a>
+                            <a target={b ? "_blank" : undefined}>
                               {link.text}
                               {last && <Arrow />}
                             </a>
