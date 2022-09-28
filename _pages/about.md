@@ -36,6 +36,9 @@ people_category:
 - heading: Another team
   subheading: Other people can go in this section
   people:
+  - name: Andrew Apples
+    role: Foodie
+    image: "/uploads/pascal.jpg"
   - name: Justin Long
     role: VIP
     image: "/uploads/min.jpg"
