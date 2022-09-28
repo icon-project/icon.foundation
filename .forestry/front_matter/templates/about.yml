@@ -52,29 +52,6 @@ fields:
     schema:
       format: markdown
   label: Bottom text
-- name: people
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: role
-    type: text
-    config:
-      required: false
-    label: Role
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: People
 - name: people_category
   type: field_group_list
   fields:
