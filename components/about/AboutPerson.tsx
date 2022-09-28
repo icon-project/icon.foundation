@@ -10,11 +10,15 @@ interface IProps {
 export default function AboutPerson({ name, photo, role }: IProps) {
   return (
     <div className="about-person">
-      <AnimationOnScroll animateIn="animate__fadeInUp">
-        <img src={photo} alt={name} />
-        <h3>{name}</h3>
-        <h4>{role}</h4>
-      </AnimationOnScroll>
+      <div className="about-person-flex">
+        <div className="about-person-image">
+          <img src={photo} alt={name} />
+        </div>
+        <div className="about-person-text">
+          <h3>{name}</h3>
+          <h4>{role}</h4>
+        </div>
+      </div>
     </div>
   );
 }

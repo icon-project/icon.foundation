@@ -42,6 +42,11 @@ const About: NextPage<IProps> = ({ footer, page, header }: IProps) => {
         text={page.people_text}
         heading={page.people_heading}
       />
+      <AboutPeople
+        people={page.people}
+        text={page.people_text}
+        heading={page.people_heading}
+      />
       <BottomText heading={page.bottom_heading} text={page.bottom_text} />
       <BottomBlocks blocks={page.bottom_blocks} />
       <Footer footer={footer} />
