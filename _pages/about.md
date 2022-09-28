@@ -33,6 +33,12 @@ bottom_heading: We are invested in Creativity and Development
 bottom_text: The ICON Foundation encourages motivated communities to support open,
   decentralized technologies through all types of efforts
 people_category:
+- heading: Another team
+  subheading: Other people can go in this section
+  people:
+  - name: Robert Klein
+    role: Developer
+    image: "/uploads/kyoung.jpg"
 - heading: Council Members
   subheading: Council Members oversee all activities of the ICON Foundation
   people:
