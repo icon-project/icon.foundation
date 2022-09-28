@@ -34,7 +34,6 @@ interface IProps {
 }
 
 const About: NextPage<IProps> = ({ footer, page, header }: IProps) => {
-  console.log(page);
   return (
     <div>
       <Head>

@@ -1,9 +1,4 @@
 .about-people {
-  margin-top: 40px;
-
-  @media (min-width: $mediumbp) {
-    margin-top: 100px;
-  }
 }
 
 .about-people-heading {
@@ -31,11 +26,19 @@
 }
 
 .about-people-wrap {
-  border-bottom: 2px solid #d9d9d9;
-  padding-bottom: 40px;
+  padding-top: 50px;
 
   @media (min-width: $mediumbp) {
-    padding-bottom: 60px;
+    padding-top: 100px;
+  }
+}
+
+.about-people-wrap + .about-people-wrap {
+  margin-top: 50px;
+  border-top: 2px solid #d9d9d9;
+
+  @media (min-width: $mediumbp) {
+    margin-top: 100px;
   }
 }
 
