@@ -9,11 +9,19 @@ import BottomText from "../components/BottomText";
 import { getPageBySlug, getSectionBySlug } from "../lib/api";
 import { IColorBlock, IFooter, IHeader, IPerson } from "../types";
 import markdownToHtml from "../lib/markdownToHtml";
+import Width from "../components/Width";
+
+interface IPeopleCategory {
+  heading: string;
+  subheading: string;
+  people: IPerson[];
+}
 
 interface IProps {
   footer: IFooter;
   header: IHeader;
   page: {
+    people_category: IPeopleCategory[];
     heading: string;
     top_text: string;
     people_heading: string;
@@ -26,6 +34,7 @@ interface IProps {
 }
 
 const About: NextPage<IProps> = ({ footer, page, header }: IProps) => {
+  console.log(page);
   return (
     <div>
       <Head>
@@ -37,18 +46,26 @@ const About: NextPage<IProps> = ({ footer, page, header }: IProps) => {
         <h1>{page.heading}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.top_text }} />
       </PageTop>
-      <AboutPeople
-        people={page.people}
-        text={page.people_text}
-        heading={page.people_heading}
-      />
-      <AboutPeople
-        people={page.people}
-        text={page.people_text}
-        heading={page.people_heading}
-      />
-      <BottomText heading={page.bottom_heading} text={page.bottom_text} />
+      <div className="about-padding">
+        <Width>
+          <div className="about-peoples">
+            {page.people_category.map((category, i) => {
+              return (
+                <div key={i} className="about-people-wrap">
+                  <AboutPeople
+                    people={category.people}
+                    text={category.subheading}
+                    heading={category.heading}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </Width>
+        <BottomText heading={page.bottom_heading} text={page.bottom_text} />
+      </div>
       <BottomBlocks blocks={page.bottom_blocks} />
+
       <Footer footer={footer} />
     </div>
   );
@@ -71,6 +88,7 @@ export async function getStaticProps() {
     "bottom_heading",
     "bottom_text",
     "bottom_blocks",
+    "people_category",
   ]);
 
   const top_text = await markdownToHtml(page.top_text);

@@ -2,4 +2,12 @@
   //max-width: 1340px;
   margin: 0 auto;
   width: calc(100% - 40px);
+
+  @media (min-width: $largebp) {
+    width: calc(100% - 100px);
+  }
+
+  &.wide {
+    width: calc(100% - 20px);
+  }
 }

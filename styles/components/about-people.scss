@@ -30,11 +30,28 @@
   }
 }
 
-.about-people-people {
+.about-people-wrap {
   border-bottom: 2px solid #d9d9d9;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+
+  @media (min-width: $mediumbp) {
+    padding-bottom: 60px;
+  }
+}
+
+.about-people-people {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 40px;
   margin-top: 60px;
+
+  @media (min-width: $mediumbp) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $largebp) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
 }

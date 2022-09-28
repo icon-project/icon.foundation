@@ -10,7 +10,7 @@ interface IProps {
 export default function HomeBlocks({ blocks }: IProps) {
   return (
     <div className="home-blocks">
-      <Width>
+      <Width wide>
         <div className="home-blocks-flex">
           <div className="home-blocks-flex-left">
             <ColorBlock

@@ -10,7 +10,7 @@ interface IProps {
 export default function BottomBlocks({ blocks }: IProps) {
   return (
     <div className="bottom-blocks">
-      <Width>
+      <Width wide>
         <div className="bottom-blocks-flex">
           {blocks.map((block, i) => {
             return (
