@@ -36,6 +36,12 @@ people_category:
 - heading: Another team
   subheading: Other people can go in this section
   people:
+  - name: Justin Long
+    role: VIP
+    image: "/uploads/min.jpg"
+  - name: David Myers
+    role: Guy
+    image: "/uploads/pascal.jpg"
   - name: Robert Klein
     role: Developer
     image: "/uploads/kyoung.jpg"
