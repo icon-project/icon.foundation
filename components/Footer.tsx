@@ -14,7 +14,7 @@ interface IProps {
 export default function Footer({ footer }: IProps) {
   return (
     <footer className="footer">
-      <Width>
+      <Width wide>
         <div className="footer-box">
           <ul className="footer-social">
             {footer.social.map((link, i) => {

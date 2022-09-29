@@ -1,25 +1,7 @@
 .about-people {
-  margin-top: 40px;
-
-  @media (min-width: $mediumbp) {
-    margin-top: 100px;
-  }
 }
 
-.about-people-flex {
-  @media (min-width: $mediumbp) {
-    display: flex;
-  }
-}
-
-.about-people-flex-left {
-  max-width: 711px;
-
-  @media (min-width: $mediumbp) {
-    margin-right: 80px;
-    width: 40%;
-  }
-
+.about-people-heading {
   h2 {
     font-weight: 600;
     font-size: 18px;
@@ -43,43 +25,36 @@
   }
 }
 
-.about-people-flex-right {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
-  align-items: center;
-  flex: 1;
-  max-width: 900px;
+.about-people-wrap {
+  padding-top: 50px;
 
   @media (min-width: $mediumbp) {
-    display: block;
-    margin-top: 0;
+    padding-top: 100px;
+  }
+}
+
+.about-people-wrap + .about-people-wrap {
+  margin-top: 50px;
+  border-top: 2px solid #d9d9d9;
+
+  @media (min-width: $mediumbp) {
+    margin-top: 100px;
+  }
+}
+
+.about-people-people {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+
+  @media (min-width: $mediumbp) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-person {
-    @media (min-width: $mediumbp) {
-      width: 45%;
-    }
-  }
-
-  .about-person:nth-of-type(even) {
-    @media (min-width: $mediumbp) {
-      margin-left: auto;
-    }
-  }
-
-  .about-person + .about-person {
-    @media (min-width: $mediumbp) {
-      margin-top: -100px;
-    }
-
-    @media (min-width: $xlargebp) {
-      margin-top: -140px;
-    }
-
-    @media (min-width: $xxlargebp) {
-      margin-top: -180px;
-    }
+  @media (min-width: $largebp) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 60px;
   }
 }

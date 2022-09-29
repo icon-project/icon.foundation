@@ -1,19 +1,32 @@
 .about-person {
-  max-width: 274px;
-  text-align: center;
-
-  @media (min-width: $mediumbp) {
-    max-width: 310px;
+  .about-person-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  @media (min-width: $largebp) {
-    max-width: 405px;
+  .about-person-image {
+    width: 100px;
+
+    @media (min-width: $mediumbp) {
+      width: 144px;
+    }
+  }
+
+  .about-person-text {
+    flex: 1;
   }
 
   img {
     border-radius: 300px;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    @media (min-width: $mediumbp) {
+      width: 144px;
+      height: 144px;
+    }
   }
 
   h3,

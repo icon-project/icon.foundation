@@ -30,29 +30,6 @@ fields:
     schema:
       format: markdown
   label: People text
-- name: people
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: role
-    type: text
-    config:
-      required: false
-    label: Role
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: People
 - name: bottom_blocks
   type: blocks
   label: Bottom Blocks
@@ -75,5 +52,46 @@ fields:
     schema:
       format: markdown
   label: Bottom text
+- name: people_category
+  type: field_group_list
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: subheading
+    type: text
+    config:
+      required: false
+    label: Subheading
+  - name: people
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+    - name: role
+      type: text
+      config:
+        required: false
+      label: Role
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: People
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: People Category
 pages:
 - _pages/about.md

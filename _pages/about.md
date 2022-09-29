@@ -32,5 +32,15 @@ bottom_blocks:
 bottom_heading: We are invested in Creativity and Development
 bottom_text: The ICON Foundation encourages motivated communities to support open,
   decentralized technologies through all types of efforts
+people_category:
+- heading: Council Members
+  subheading: Council Members oversee all activities of the ICON Foundation
+  people:
+  - name: Min Kim
+    role: Council Member
+    image: "/uploads/min.jpg"
+  - name: Pascal Schmid
+    role: Council Member
+    image: "/uploads/pascal.jpg"
 
 ---
