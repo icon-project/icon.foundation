@@ -6,14 +6,14 @@ top_text: The ![](/uploads/icon-icon.svg) ICON Foundation provides support for o
 projects:
 - title: Blockchain Transmission Protocol (BTP)
   description: Blockchain Transmission Protocol is a general purpose, blockchain-agnostic
-    protocol for sending messages across independent blockchain.
+    protocol for sending messages across independent blockchains
   url: https://github.com/icon-project/btp
   image: "/uploads/btp-bg.svg"
   logo: "/uploads/btp.svg"
   logo_width: 136
 - title: ICON Network
   description: ICON Network is an open blockchain for general-purpose smart contract
-    development, with a focus on providing infrastructure to support BTP.
+    development, with a focus on providing infrastructure to support BTP
   url: https://icon.community
   image: "/uploads/icon-bg.svg"
   logo: "/uploads/icon.svg"
